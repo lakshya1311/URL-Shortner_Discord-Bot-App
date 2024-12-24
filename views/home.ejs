@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" 
+    href=
+"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <title>URL Shortner</title>
+</head>
+<body>
+    <h1>URL Shortner</h1>
+    <form action="/url" method="post" >
+        <label>Enter your Url : </label> &nbsp;
+        <input type="text" placeholder="http://xyz.com" name="url">
+        <button type="submit">Generate</button>
+    </form>
+
+    <% if (locals.shortId) { %>
+        <p>Generated URL is - http://localhost:8001/url/<%= shortId %></p>
+        
+    <% } %>
+
+    <% if(locals.urls) { %>
+
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Short Id</th>
+                <th scope="col">Redirect Url</th>
+                <th scope="col">Clicks</th>
+              </tr>
+            </thead>
+            <tbody>
+                <% locals.urls.map((url,index)=>{ %>
+                    <tr>
+                        <td><%= index %></td>
+                        <td><%= url.shortId %></td>
+                        <td><%= url.redirectURL %></td>
+                        <td><%= url.visitHistory.length %></td>
+                    </tr>
+                   <% }) %> 
+            </tbody>
+          </table>
+        <% } %>
+
+</body>
+</html>
