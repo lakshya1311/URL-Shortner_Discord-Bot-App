@@ -1,10 +1,10 @@
 # Getting Started with URL Shortner App and Discord Bot
 
-## This app is developed using Express JS, Node Js, MongoDB , EJS , Discord JS
-## This is standalone app of URL-Shortner, in which a Authenticated User can create a small URL, of any Url/Link he wishes to provide. User is Authorized to see onlt the Urls he has generated on the home page after logging-in. Admin User can see all the Urls.
-## DISCORD BOT is also created, which integrates with the above app, to create short-urls.
-## This DISCORD BOT can be hosted on any Discord Server using Discord Token mentioned in .env file.
-## `create https://xyz.com` => this command when passed in the server where the BOT is active , BOT will reply with a short url for "https://xyz.com"
+### This app is developed using Express JS, Node Js, MongoDB , EJS , Discord JS
+### This is standalone app of URL-Shortner, in which a Authenticated User can create a small URL, of any Url/Link he wishes to provide. User is Authorized to see onlt the Urls he has generated on the home page after logging-in. Admin User can see all the Urls.
+### DISCORD BOT is also created, which integrates with the above app, to create short-urls.
+### This DISCORD BOT can be hosted on any Discord Server using Discord Token mentioned in .env file.
+### `create https://xyz.com` => this command when passed in the server where the BOT is active , BOT will reply with a short url for "https://xyz.com"
 
 ________________________________________________________________________________________________________________
 
@@ -19,10 +19,10 @@ This project depends on some environment variables. If you are running this proj
 
 Here are the required ones:
 
-DISCORD_TOKEN
-MONGO_URL
-PORT 
-SECRET
+1. DISCORD_TOKEN
+2. MONGO_URL
+3. PORT 
+4. SECRET
 
 ___________________________________________________________________________________________________________________
 
